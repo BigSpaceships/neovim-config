@@ -13,6 +13,7 @@ autocmd("BufWinEnter", {
 
 		local bufnr = vim.api.nvim_get_current_buf()
 		local opts = {buffer = bufnr, remap = false}
+
 		vim.keymap.set("n", "<leader>p", function()
 			vim.cmd.Git('push')
 		end, opts)
@@ -21,6 +22,9 @@ autocmd("BufWinEnter", {
 			vim.cmd.Git('pull', '--rebase')
 		end, opts)
 
+		vim.keymap.set("n", "<leader>gc", ":Git commit -m \"", opts);
+
 		vim.keymap.set("n", "<leader>t", ":Git push -u origin ", opts);
+		-- TODO: make this so I can set a branch to push to and save it between sessions
 	end,
 })
