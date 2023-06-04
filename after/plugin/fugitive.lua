@@ -1,4 +1,12 @@
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
+vim.keymap.set("n", "<leader>gs", function()
+	local paths = vim.fn.finddir(".git/..", vim.fn.expand('%:p:h') ..  ';')
+
+	if paths ~= "" then
+		vim.cmd.Git()
+	else
+		print("Not in a git repository")
+	end
+end)
 
 local bigspaceships_fugitive = vim.api.nvim_create_augroup("bigspaceships_fugitive", {})
 
@@ -6,8 +14,8 @@ local autocmd = vim.api.nvim_create_autocmd
 autocmd("BufWinEnter", {
 	group = bigspaceships_fugitive,
 	pattern = "*",
-	callback = function() 
-		if vim.bo.ft ~= "fugitive" then 
+	callback = function()
+		if vim.bo.ft ~= "fugitive" then
 			return
 		end
 
@@ -18,7 +26,7 @@ autocmd("BufWinEnter", {
 			vim.cmd.Git('push')
 		end, opts)
 
-		vim.keymap.set("n", "<leader>P", function() 
+		vim.keymap.set("n", "<leader>P", function()
 			vim.cmd.Git('pull', '--rebase')
 		end, opts)
 
