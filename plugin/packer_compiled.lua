@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/oliver/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  harpoon = {
+    loaded = true,
+    path = "/home/oliver/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/theprimeagen/harpoon"
+  },
   ["kanagawa.nvim"] = {
     loaded = true,
     path = "/home/oliver/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
