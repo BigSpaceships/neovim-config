@@ -1,4 +1,8 @@
-- [install neovim] (https://github.com/neovim/neovim/wiki/Installing-Neovim#appimage-universal-linux-package)
-- [install packer] (https://github.com/wbthomason/packer.nvim#quickstart)
-- [install ripgrep] (https://github.com/BurntSushi/ripgrep#installation) 
-- [install GCC and others] (https://www.scaler.com/topics/c/install-c-on-linux/)
+- [install neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#appimage-universal-linux-package)
+- [install packer](https://github.com/wbthomason/packer.nvim#quickstart)
+- [install ripgrep](https://github.com/BurntSushi/ripgrep#installation) 
+- [install GCC and others](https://www.scaler.com/topics/c/install-c-on-linux/)
+- install ncurses for tmux - `sudo apt-get install libncurses5-dev libncursesw5-dev`
+- [install libevent](https://github.com/tmux/tmux/wiki/Installing#building-dependencies)
+- install pkg-config `sudo apt install pkg-config`
+- [install tmux](https://github.com/tmux/tmux#from-release-tarball)
