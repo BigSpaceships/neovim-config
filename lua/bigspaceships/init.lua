@@ -1,5 +1,8 @@
-require("bigspaceships.remap")
-require("bigspaceships.set")
 require("bigspaceships.packer")
 
-pcall(vim.cmd, "colorscheme kanagawa-dragon")
+if not pcall(vim.cmd, "colorscheme kanagawa-dragon") then
+    vim.cmd("PackerSync")
+end
+
+require("bigspaceships.remap")
+require("bigspaceships.set")
