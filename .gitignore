@@ -1,2 +1,4 @@
 squashfs-root/
 nvim.appimage
+
+nvim/plugin/
