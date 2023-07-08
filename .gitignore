@@ -2,3 +2,5 @@ squashfs-root/
 nvim.appimage
 
 nvim/plugin/
+
+tmux/plugins/

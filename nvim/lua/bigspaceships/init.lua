@@ -2,7 +2,7 @@ require("bigspaceships.packer")
 
 if not pcall(require, "tokyonight") then
     fullMode = false
-else 
+else
     fullMode = true
     require("bigspaceships.remap")
     require("bigspaceships.set")
