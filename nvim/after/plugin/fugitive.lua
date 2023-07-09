@@ -48,10 +48,8 @@ if fullMode then
             end, opts)
 
             vim.keymap.set("n", "<leader>P", function()
-                vim.cmd.Git('pull', '--rebase')
+                vim.cmd [[ Git pull --rebase ]]
             end, opts)
-
-            vim.keymap.set("n", "<leader>gc", ":Git commit -m \"", opts);
 
             vim.keymap.set("n", "<leader>t", ":Git push -u origin ", opts);
             -- TODO: make this so I can set a branch to push to and save it between sessions
