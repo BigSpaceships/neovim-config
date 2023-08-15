@@ -1,5 +1,5 @@
 {
-	"name": "Vim setup",
+	"name": "VSCode",
 	"customizations": {
 		"vscode": {
 			"extensions": [
