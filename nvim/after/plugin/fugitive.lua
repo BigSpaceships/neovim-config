@@ -1,5 +1,5 @@
 --require("json")
-if fullMode then    
+if fullMode and not vim.g.vscode then    
     vim.keymap.set("n", "<leader>gs", function()
         local paths = vim.fn.finddir(".git/..", vim.fn.expand('%:p:h') ..  ';')
 

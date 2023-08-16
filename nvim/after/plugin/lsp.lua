@@ -1,4 +1,4 @@
-if fullMode then
+if fullMode and not vim.g.vscode then
   local lsp = require("lsp-zero")
 
   lsp.preset("recommended")

@@ -1,4 +1,4 @@
-if fullMode then
+if fullMode and not vim.g.vscode then
     local mark = require("harpoon.mark")
     local ui = require("harpoon.ui")
 
