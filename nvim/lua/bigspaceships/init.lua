@@ -16,4 +16,3 @@ vim.cmd("colorscheme tokyonight")
 
 require("bigspaceships.remap")
 require("bigspaceships.set")
-end
