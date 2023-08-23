@@ -1,4 +1,4 @@
-if fullMode not vim.g.vscode then 
+if fullMode and not vim.g.vscode then 
     local nvim_tmux_nav = require('nvim-tmux-navigation')
 
     nvim_tmux_nav.setup {
