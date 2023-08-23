@@ -20,6 +20,9 @@
 			}
 		}
 	},
+    "containerEnv": {
+        "XDG_CONFIG_HOME": "/root/.config"
+    },
 	"dockerFile": "DockerFile",
 	"onCreateCommand": "bash -i ${containerWorkspaceFolder}/.devcontainer/post-creation-setup.sh",
 	"features": {
