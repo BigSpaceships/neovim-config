@@ -29,7 +29,7 @@
 		"ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {},
 		"ghcr.io/devcontainers/features/github-cli:1": {},
 		"ghcr.io/devcontainers/features/sshd:1": {},
-		"ghcr.io/devcontainers-contrib/features/neovim-apt-get:1": {}
+		"ghcr.io/devcontainers-contrib/features/neovim-apt-get:1": {},
 		"ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:0": {}
 	}
 }
