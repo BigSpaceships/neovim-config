@@ -1,8 +1,10 @@
 chsh -s /usr/bin/zsh
 
-if $CI
+if $GITHUB_ACTIONS
 then
   git clone https://github.com/BigSpaceships/neovim-config.git $HOME/.config/
+
+  mv $HOME/after-creation-final.sh $HOME/after-creation.sh
 else 
   gh auth setup-git
 
