@@ -20,5 +20,4 @@ jobs:
         uses: devcontainers/ci@v0.3
         with: 
           imageName: bigspaceships/base-codespace-config
-      - name: after setup
-        run: sudo bash -i /root/after-setup.sh
+          runCmd: bash -i /root/after-setup.sh
