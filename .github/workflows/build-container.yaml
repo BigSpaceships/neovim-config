@@ -21,4 +21,4 @@ jobs:
         with: 
           imageName: bigspaceships/base-codespace-config
       - name: after setup
-        run: bash -i /root/after-setup.sh
+        run: sudo bash -i /root/after-setup.sh
