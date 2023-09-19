@@ -20,19 +20,19 @@
 			}
 		}
 	},
-    "containerEnv": {
-        "XDG_CONFIG_HOME": "/root/.config"
-    },
+    	"containerEnv": {
+        	"XDG_CONFIG_HOME": "/root/.config"
+    	},
 	"dockerFile": "DockerFile",
-	"onCreateCommand": "bash -i ${HOME}/after-creation.sh",
+	"onCreateCommand": "ls ${HOME} && bash -i ${HOME}/after-creation.sh",
 	"features": {
-        "ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {},
-        "ghcr.io/devcontainers/features/github-cli:1": {},
-        "ghcr.io/devcontainers/features/sshd:1": {},
-        "ghcr.io/devcontainers-contrib/features/act:1": {},
-        "ghcr.io/devcontainers/features/node:1": {},
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-        "ghcr.io/devcontainers-contrib/features/neovim-homebrew:1": {},
-        "ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:0": {}
+        	"ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {},
+        	"ghcr.io/devcontainers/features/github-cli:1": {},
+	        "ghcr.io/devcontainers/features/sshd:1": {},
+        	"ghcr.io/devcontainers-contrib/features/act:1": {},
+	        "ghcr.io/devcontainers/features/node:1": {},
+        	"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        	"ghcr.io/devcontainers-contrib/features/neovim-homebrew:1": {},
+        	"ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:0": {}
 	}
 }
