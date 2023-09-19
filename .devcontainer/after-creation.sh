@@ -5,6 +5,8 @@ then
   git clone https://github.com/BigSpaceships/neovim-config.git $HOME/.config/
 
   mv $HOME/after-creation-final.sh $HOME/after-creation.sh
+
+  ls $HOME
 else 
   gh auth setup-git
 
