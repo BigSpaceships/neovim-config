@@ -20,4 +20,4 @@ jobs:
         uses: devcontainers/ci@v0.3
         with: 
           imageName: bigspaceships/base-codespace-config
-          runCmd: echo
+          runCmd: bash -i $HOME/.config/.devcontainer/after-creation.sh
