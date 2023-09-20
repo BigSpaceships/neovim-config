@@ -1,0 +1,17 @@
+name: Build
+
+on: 
+  - push
+  - workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build container
+        uses: devcontainers/ci@v0.3
+        with: 
+          runCmd: echo

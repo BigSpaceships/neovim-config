@@ -24,7 +24,7 @@
         	"XDG_CONFIG_HOME": "/root/.config"
     	},
 	"dockerFile": "DockerFile",
-	"onCreateCommand": "bash \"ls ${HOME}\" && bash -i ${HOME}/after-creation.sh",
+	"onCreateCommand": "bash -i ${HOME}/.config/.devcontainer/after-creation.sh",
 	"features": {
         	"ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {},
         	"ghcr.io/devcontainers/features/github-cli:1": {},
